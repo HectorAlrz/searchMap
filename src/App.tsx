@@ -10,6 +10,8 @@ function App() {
     <div className="h-screen w-screen grid grid-cols-12">
       <div className="col-span-3 p-2">
         <LocationSearch onPlaceClick={(p) => setPlace(p)} />
+        Searching For
+        {place?.name}
       </div>
       <div className="col-span-9">
         <Map place={place} />
